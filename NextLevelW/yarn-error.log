@@ -1,0 +1,63 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js add @types/ multer -D
+
+PATH: 
+  C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\ProgramData\chocolatey\bin;C:\Program Files\nodejs\;C:\Program Files (x86)\Yarn\bin\;C:\Users\leonp\AppData\Local\Microsoft\WindowsApps;;C:\Users\leonp\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\leonp\AppData\Roaming\npm;C:\Users\leonp\AppData\Local\Yarn\bin
+
+Yarn version: 
+  1.22.4
+
+Node version: 
+  12.18.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/@types%2f: Request "https://registry.yarnpkg.com/@types%2f" returned a 405
+      at Request.params.callback [as _callback] (C:\Program Files (x86)\Yarn\lib\cli.js:66105:18)
+      at Request.self.callback (C:\Program Files (x86)\Yarn\lib\cli.js:140748:22)
+      at Request.emit (events.js:315:20)
+      at Request.<anonymous> (C:\Program Files (x86)\Yarn\lib\cli.js:141720:10)
+      at Request.emit (events.js:315:20)
+      at IncomingMessage.<anonymous> (C:\Program Files (x86)\Yarn\lib\cli.js:141642:12)
+      at Object.onceWrapper (events.js:421:28)
+      at IncomingMessage.emit (events.js:327:22)
+      at endReadableNT (_stream_readable.js:1221:12)
+      at processTicksAndRejections (internal/process/task_queues.js:84:21)
+
+npm manifest: 
+  {
+    "name": "NextLevelW",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "dev": "ts-node-dev --transpileOnly --ignore-watch node_modules src/server.ts",
+      "knex:migrate": "knex --knexfile knexfile.ts migrate:latest",
+      "knex:seed": "knex --knexfile knexfile.ts seed:run"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+      "cors": "^2.8.5",
+      "express": "^4.17.1",
+      "knex": "^0.21.1",
+      "multer": "^1.4.2",
+      "sqlite3": "^4.2.0"
+    },
+    "devDependencies": {
+      "@types/cors": "^2.8.6",
+      "@types/express": "^4.17.6",
+      "ts-node": "^8.10.2",
+      "ts-node-dev": "^1.0.0-pre.44",
+      "typescript": "^3.9.3"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
